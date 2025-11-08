@@ -70,14 +70,14 @@ const vdom = (
 );
 
 // Работа с null
-const header = text ? <h1>{text}</h1> : null
+const header = text ? <h1>{text}</h1> : null;
 
 const vdom = (
   <div>
     {header}
     <Hello />
   </div>
-)
+);
 
 // или так
 const vdom = (
@@ -85,7 +85,7 @@ const vdom = (
     {text ? <h1>{text}</h1> : null}
     <Hello />
   </div>
-)
+);
 
 // Или так
 const vdom = (
@@ -93,4 +93,4 @@ const vdom = (
     {text && <h1>{text}</h1>}
     <Hello />
   </div>
-)
+);
